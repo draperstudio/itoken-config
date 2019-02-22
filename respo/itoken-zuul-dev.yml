@@ -17,3 +17,12 @@ zuul:
     api-admin:
       path: /api/admin/**
       serviceId: itoken-admin-service
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: *
