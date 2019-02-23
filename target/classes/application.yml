@@ -10,6 +10,10 @@ spring:
         git:
           uri: https://github.com/draperstudio/itoken-config
           search-paths: /respo
+        bootstrap: true
+      enabled: true
+      fail-fast: true
+
 
 server:
   port: 8888
