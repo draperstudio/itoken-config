@@ -2,14 +2,12 @@ spring:
   application:
     name: itoken-eureka
   zipkin:
-    base-url: http://localhost:9411
+    base-url: http://itoken-zipkin:9411
 
 server:
   port: 8761
 
 eureka:
-  instance:
-    hostname: localhost
   client:
     # 将自己注册到 Eureka 构建集群环境
     registerWithEureka: false

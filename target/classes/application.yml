@@ -2,7 +2,7 @@ spring:
   application:
     name: itoken-config
   zipkin:
-    base-url: http://localhost:9411
+    base-url: http://itoken-zipkin:9411
   cloud:
     config:
       label: master
@@ -17,5 +17,14 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://itoken-eureka:8761/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
