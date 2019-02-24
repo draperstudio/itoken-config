@@ -16,7 +16,7 @@ eureka:
     # 表示是否要从其他 Eureka 获取信息
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://172.17.11.220:8761/eureka/,http://172.17.11.220:8861/eureka/,http://172.17.11.220:8961/eureka/
 
 management:
   endpoint:
